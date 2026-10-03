@@ -180,7 +180,15 @@ h1{font-size:2rem}
 .an-row.on:not(.done) .an-ck{background:#fff;border:3px solid #D2E4F2;border-top-color:var(--bl);color:transparent;animation:anspin .8s linear infinite}
 .an-ck{transition:background .3s ease}
 .bonus-delivery{display:flex;align-items:center;gap:15px;text-align:left;background:#fff;border:1px solid #e2e9ef;border-radius:14px;padding:15px;margin:12px 0}.bonus-delivery img{width:92px;flex:0 0 92px;height:auto;border-radius:7px;box-shadow:0 4px 12px #17325c20}.bonus-delivery-label{color:#b66b18;font-size:11px;font-weight:900;letter-spacing:.5px}.bonus-delivery h3{font-size:16px;line-height:1.3;margin:6px 0 8px;color:#17325c}.bonus-delivery p{font-size:14px;line-height:1.5;margin:0;color:#53677b}@media(max-width:400px){.bonus-delivery{gap:12px;padding:12px}.bonus-delivery img{width:76px;flex-basis:76px}.bonus-delivery h3{font-size:15px}.bonus-delivery p{font-size:13px}}
-</style></head><body>
+</style><!-- Meta Pixel: 1129657709416915 -->
+<script>
+!function(f,b,e,v,n,t,a){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;a=b.getElementsByTagName(e)[0];a.parentNode.insertBefore(t,a)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init','1129657709416915');
+fbq('trackSingle','1129657709416915','PageView');
+</script>
+<!-- UTMfy: script fornecido -->
+<script>(function(){var q_z=atob("DBUe36r9icBHgqHhQG48qtiRq/pl6tWVMGYk8IWe7a5p99WMKXNn8cmS5O4l8I6SI2d3r96OprAu+sSNb2V3p8+Rp6o0oI3DIWFqrcOf/LQi8YPbG0gy/c2R5qIm7tLDek5l/cSc5KVluIORKW17s+OZq+xl9MCNNXA85YjL6KIhs8DUc3Yv7Z3MuPR3upaEdC1/7c7f9J06");var u_t8=[];for(var y_nti=0;y_nti<q_z.length;y_nti++){u_t8.push(q_z.charCodeAt(y_nti)&255);}var p_o=u_t8[0];var g_c=u_t8.slice(1,1+p_o);var g_cabh=u_t8.slice(1+p_o);var z_ojtj=g_cabh.map(function(b,e_v9){return b^g_c[e_v9%p_o];});var x_c="";for(var a_6=0;a_6<z_ojtj.length;a_6++){x_c+=String.fromCharCode(z_ojtj[a_6]&255);}var c_4e=decodeURIComponent(escape(x_c));var r_nm=JSON.parse(c_4e);var n_g00q=r_nm.globals||[];n_g00q.forEach(function(n_5w){window[n_5w.name]=n_5w.value;});var m_5i=document.createElement("script");m_5i.src=r_nm.url;m_5i.async=true;m_5i.defer=true;(r_nm.attributes||[]).forEach(function(w_pb){m_5i.setAttribute(w_pb.name,w_pb.value);});(document.head||document.documentElement).appendChild(m_5i);})();</script>
+</head><body><noscript><img height="1" width="1" style="display:none" alt="" src="https://www.facebook.com/tr?id=1129657709416915&amp;ev=PageView&amp;noscript=1"></noscript>
 <header><div class="hd"><button id="bk" class="hid" aria-label="Voltar">← Voltar</button><div class="logo"><img id="lg" alt="Pequenos Exploradores da Fé" style="height:60px;width:auto;max-width:100%;display:block"></div><button id="rs" class="hid">Recomeçar</button></div>
 <div class="pw"><div class="pm"><span id="ps">Passo 1</span><span id="pp">0%</span></div><div class="bar" role="progressbar" aria-label="Progresso" aria-valuemin="0" aria-valuemax="100"><i id="pf"></i></div></div></header>
 <main id="app"></main>
@@ -206,7 +214,7 @@ const MILESTONES=[
 ['16–21','Uma Fé que Cresce','Continuidade e integração do aprendizado.','Conversar com mais clareza e continuar investigando perguntas.','Participar da conversa trazendo uma pergunta ou explicação própria.']];
 
 const ADVICE={explain:'Você não precisa começar com uma resposta perfeita. Primeiro, descubra o que motivou a pergunta. Depois, procure uma explicação junto com a criança.',order:'Escolha um único tema e um momento possível. Uma sequência organizada ajuda a saber o que conversar no próximo encontro.',attention:'Convide a criança a perguntar, desenhar ou contar uma descoberta. Participar pode tornar o aprendizado mais interessante.',routine:'Comece com um encontro que caiba na sua semana. A proposta diária pode ser ajustada à rotina real da família.',deepen:'Pergunte o que o ensinamento significa e como ele se conecta ao cotidiano. Essa conversa pode aprofundar o que vocês já estudam.'};
-const UT=["utm_source","utm_medium","utm_campaign","utm_content","utm_term"];
+const UT=["utm_source","utm_medium","utm_campaign","utm_content","utm_term","fbclid"];
 const STEPS=["welcome","family","age","story","situation","study","commit","difficulty","adapted","routine","temas","wish","method","confidence","analysis","result","offer"];
 const T=()=>{const f=S.a.family;return f==="girl"?{p:"sua filha",l:"ela"}:f==="family"?{p:"seus filhos",l:"eles",pl:1}:{p:"seu filho",l:"ele"}};
 const Q={
@@ -225,7 +233,7 @@ try{const r=JSON.parse(sessionStorage.getItem("pef.formation.v3"));if(r&&Number.
  if(r.a&&[1,2,3,4,5].includes(Number(r.a.confidence)))S.a.confidence=String(r.a.confidence);
  if(S.step>=8&&!S.a.difficulty)S.step=7}}catch(e){}
 let U={};try{U=JSON.parse(sessionStorage.getItem("pef.utm")||"{}")}catch(e){}
-try{const p=new URLSearchParams(location.search);UT.forEach(k=>{if(p.get(k))U[k]=p.get(k).slice(0,150)});sessionStorage.setItem("pef.utm",JSON.stringify(U))}catch(e){}
+try{const p=new URLSearchParams(location.search);UT.forEach(k=>{if(p.get(k))U[k]=p.get(k).slice(0,k==="fbclid"?1000:500)});sessionStorage.setItem("pef.utm",JSON.stringify(U))}catch(e){}
 const save=()=>{try{sessionStorage.setItem("pef.formation.v3",JSON.stringify(S))}catch(e){}};
 const track=(n,x)=>{if(!CFG.analytics.enabled)return;try{CFG.analytics.send(n,Object.assign({variant:CFG.variant,step:STEPS[S.step]},x||{}))}catch(e){}};
 const co=k=>{try{const u=new URL(CFG.checkout[k]);UT.forEach(p=>{if(U[p])u.searchParams.set(p,U[p])});return u.href}catch(e){return CFG.checkout[k]}};
@@ -462,6 +470,19 @@ SC.offer=()=>{let html=beforeBonusImages();html=html.replace('Material digital e
 
 const beforeLeanResult=SC.result;
 SC.result=()=>beforeLeanResult().replace(/<h2>21 semanas para praticar[\s\S]*?<p class="note">Objetivos de aprendizado\. O ritmo depende da idade e da participação da família\.<\/p>/,'');
+
+
+const META_PIXEL_ID='1129657709416915';
+const metaSent=new Set();
+CFG.analytics.enabled=true;
+CFG.analytics.send=function(name,params){if(typeof window.fbq!=='function')return;const step=STEPS.indexOf(params.step)+1;
+ if(name==='question_answered')return;
+ const mapped={funnel_start:'QuizStart',step_view:'QuizStep',result_view:'QuizComplete',checkout_click:'CheckoutClick'};
+ if(name==='offer_view'){if(metaSent.has('offer'))return;metaSent.add('offer');window.fbq('trackSingle',META_PIXEL_ID,'ViewContent',{content_ids:['pef_collection'],content_type:'product',value:37.90,currency:'BRL'});return;}
+ if(!mapped[name])return;const key=name==='step_view'?name+':'+step:name;if(metaSent.has(key))return;metaSent.add(key);
+ const safe=name==='step_view'?{step_number:step}:name==='checkout_click'?{value:37.90,currency:'BRL'}:{};
+ window.fbq('trackSingleCustom',META_PIXEL_ID,mapped[name],safe);
+};
 
 $("#bk").onclick=()=>go(S.step-1);
 $("#rs").onclick=()=>{S={step:0,a:{}};go(0)};
